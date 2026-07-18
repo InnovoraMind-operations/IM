@@ -1,0 +1,550 @@
+import { motion } from 'framer-motion';
+import { Layout } from '@/components/layout/Layout';
+import { Target, Eye } from 'lucide-react';
+import certificateImg from '@/assets/certificate.png';
+
+import walidaImg from '@/assets/advisors/advisor-1.png';
+import zohaImg from '@/assets/advisors/ZR.jpeg';
+import joeImg from '@/assets/advisors/advisor-2.png';
+import ezinneImg from '@/assets/advisors/advisor-6.jpeg';
+import firasImg from '@/assets/advisors/Dr firas.jpeg';
+import tianshengImg from '@/assets/advisors/tiansheng.png';
+import katarzynaImg from '@/assets/advisors/katarzyna.png';
+import ratnaImg from '@/assets/advisors/ratna-raja-kumar.jpg';
+import aidaImg from '@/assets/advisors/aida-mehrad.jpeg';
+
+
+const About = () => {
+  return (
+    <Layout>
+      {/* Hero Section */}
+      <section className="relative hero-gradient py-20 lg:py-32 overflow-hidden">
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-float" />
+          <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '-3s' }} />
+        </div>
+
+        <div className="container-custom relative z-10 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="max-w-4xl mx-auto"
+          >
+            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6">
+              About <span className="text-gradient">InnovoraMind</span>
+            </h1>
+            <p className="text-xl sm:text-2xl text-primary-foreground/80 font-medium">
+              Advancing Technology, Innovation, and Digital Excellence
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Who We Are Section */}
+      <section className="section-padding bg-background relative overflow-hidden">
+        <div className="container-custom">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="space-y-6"
+            >
+              <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-8">
+                Who We Are
+              </h2>
+
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                InnovoraMind LLC was founded with a clear purpose — to bring enterprise‑grade IT solutions, AI‑driven innovation, and digital transformation services to businesses worldwide. In 2026, we officially launched our IT services division, backed by a team of seasoned professionals with years of hands‑on experience across artificial intelligence, cloud architecture, data engineering, and cybersecurity.
+              </p>
+
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                While our IT services are newly launched, the expertise behind them is anything but new. Our founding team has spent years building, deploying, and scaling enterprise systems for organizations across finance, government, healthcare, and technology sectors. Every solution we deliver carries that depth of knowledge and battle‑tested experience.
+              </p>
+
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Headquartered in New Mexico, USA, InnovoraMind is built on the belief that innovation should be accessible, reliable, and impactful. We combine the agility of a modern startup with the maturity and professionalism of a company that truly understands the landscape — because our team has been shaping it for years.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, rotate: -2 }}
+              whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, type: "spring", bounce: 0.4 }}
+              className="relative group max-w-sm mx-auto"
+            >
+              {/* Decorative Frame */}
+              <div className="absolute -inset-4 bg-gradient-to-tr from-secondary/20 to-accent/20 rounded-[2rem] blur-2xl opacity-50 group-hover:opacity-100 transition-opacity duration-500" />
+
+              <div className="relative bg-white p-3 rounded-2xl shadow-2xl border border-border overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-tr from-white/10 via-transparent to-white/10 pointer-events-none" />
+                <img
+                  src={certificateImg}
+                  alt="Certificate of Organization — InnovoraMind LLC, State of New Mexico"
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-auto rounded-lg shadow-inner group-hover:scale-[1.02] transition-transform duration-700"
+                />
+
+                {/* Certificate Ribbon Seal Element */}
+                <div className="absolute bottom-6 right-6 w-16 h-16 opacity-20 group-hover:opacity-40 transition-opacity">
+                  <div className="absolute inset-0 border-4 border-dotted border-secondary rounded-full animate-[spin_20s_linear_infinite]" />
+                </div>
+              </div>
+
+              {/* Caption */}
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5 }}
+                className="mt-6 text-center"
+              >
+                <p className="text-sm font-semibold text-secondary uppercase tracking-[0.2em]">Verified Entity</p>
+                <p className="text-xs text-muted-foreground mt-1 underline decoration-secondary/30">Certificate of Organization • State of New Mexico</p>
+              </motion.div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Leadership & Advisory Section */}
+      <section className="section-padding bg-muted/20 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-secondary rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2" />
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2" />
+        </div>
+
+        <div className="container-custom relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
+              Our <span className="text-secondary text-gradient">Leadership</span>
+            </h2>
+            <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+              The visionaries and strategic minds driving InnovoraMind's global mission forward.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-x-8 lg:gap-x-16 gap-y-12 md:gap-y-16 max-w-5xl mx-auto px-4 relative">
+            {/* Shared Team Connection Pattern (Subtle background element) */}
+            <div className="absolute inset-0 opacity-[0.03] pointer-events-none hidden md:block">
+              <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs><pattern id="hexagons" width="50" height="43.4" patternUnits="userSpaceOnUse" patternTransform="scale(2)">
+                  <path d="M25 0 L50 14.4 L50 43.4 L25 57.8 L0 43.4 L0 14.4 Z" fill="none" stroke="currentColor" strokeWidth="1" />
+                </pattern></defs>
+                <rect width="100%" height="100%" fill="url(#hexagons)" />
+              </svg>
+            </div>
+
+            {[
+              {
+                name: "Dr. Walida Ounruean",
+                role: "Director",
+                image: walidaImg,
+                bio: "Dr. Walida Ounruean leads InnovoraMind with a focus on academic excellence. She bridges the gap between research and practical industry applications, fostering AI-driven growth.",
+                color: "accent"
+              },
+              {
+                name: "Dr. Zoha Rahman",
+                role: "Board Member",
+                image: zohaImg,
+                bio: "Dr. Zoha Rahman is Founder & Country Director at the Centre for Big Data & Machine Learning in the United States. She brings unparalleled expertise in AI strategy and data-driven leadership to InnovoraMind's board, shaping transformative digital solutions on a global scale.",
+                color: "secondary"
+              },
+              {
+                name: "Dr. Ratna Raja Kumar Jambi",
+                role: "Director",
+                image: ratnaImg,
+                bio: "Dr. Ratna Raja Kumar Jambi brings a wealth of multidisciplinary expertise to InnovoraMind's board, driving strategic initiatives that translate cutting-edge research into real-world technological impact across global markets.",
+                color: "secondary"
+              },
+              {
+                name: "Dr. Joe Perez",
+                role: "Strategy Director",
+                image: joeImg,
+                bio: "Dr. Joe Perez is a tech powerhouse with 40+ years of experience. An international keynote speaker and Amazon best-selling author, he brings world-class data strategy to InnovoraMind.",
+                color: "secondary"
+              },
+              {
+                name: "Ezinne Esther Arisa",
+                role: "Independent Director",
+                image: ezinneImg,
+                bio: "Ezinne Esther Arisa brings strategic leadership and governance expertise. Her visionary approach guides InnovoraMind's long-term objectives and shapes our global digital strategy.",
+                color: "secondary"
+              },
+              {
+                name: "Dr. Katarzyna Antosz",
+                role: "Board Member",
+                image: katarzynaImg,
+                bio: "Dr. Katarzyna Antosz is a distinguished Board Member at InnovoraMind, providing strategic oversight and expertise to drive innovation and excellence in digital transformation.",
+                color: "accent"
+              },
+              {
+                name: "Dr. Firas Zeidan",
+                role: "Advisory Board Member",
+                image: firasImg,
+                bio: "Dr. Firas Zeidan provides critical guidance on InnovoraMind's research agenda and industry partnerships, drawing from his deep expertise in technology leadership and innovation.",
+                color: "accent"
+              },
+              {
+                name: "Dr. Tiansheng Yang",
+                role: "Advisory Board Member",
+                image: tianshengImg,
+                bio: "Dr. Tiansheng Yang is an esteemed Faculty Member at the University of South Wales, UK. He specializes in digital transformation and research leadership for educational innovation.",
+                color: "secondary"
+              },
+              {
+                name: "Aida Mehrad",
+                role: "Director of Innovation & Emerging Technologies",
+                image: aidaImg,
+                bio: "Aida Mehrad leads InnovoraMind's technological frontier, translating cutting-edge emerging technologies into scalable, impactful enterprise solutions that redefine the modern digital landscape.",
+                color: "accent"
+              }
+            ].map((member, idx) => (
+              <motion.div
+                key={member.name}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: idx * 0.1 }}
+                className={`w-full max-w-[360px] mx-auto flex flex-col items-center text-center gap-4 bg-card/80 backdrop-blur-sm rounded-[2.5rem] border border-border/50 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 p-7 group relative`}
+              >
+                <div className="relative w-full max-w-[280px]">
+                  {/* Unified Ring Element */}
+                  <div className={`absolute -inset-2 bg-gradient-to-tr ${member.color === 'secondary' ? 'from-secondary/20 via-accent/20 to-secondary/20' : 'from-accent/20 via-secondary/20 to-accent/20'
+                    } rounded-full opacity-40 blur-xl group-hover:opacity-70 transition-opacity duration-500`} />
+
+                  <div className="relative">
+                    {/* Consistent Modern Frame */}
+                    <div className={`relative rounded-3xl overflow-hidden border-2 border-white/50 shadow-2xl transition-all duration-500 group-hover:rounded-[2.5rem]`}>
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        loading="lazy"
+                        decoding="async"
+                        className="w-full object-cover group-hover:scale-110 transition-transform duration-700 aspect-[4/5]"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="space-y-2 w-full">
+                  <h3 className="font-display text-xl sm:text-2xl font-bold text-foreground group-hover:text-secondary transition-colors">{member.name}</h3>
+                  <div className="inline-block px-4 py-1 rounded-full bg-secondary/10 text-secondary font-bold text-[11px] tracking-widest uppercase">
+                    {member.role}
+                  </div>
+                  <div className="h-px w-12 bg-gradient-to-r from-transparent via-border to-transparent mx-auto mt-2" />
+                  <p className="text-sm text-muted-foreground leading-relaxed pt-2 text-center md:text-left px-2">
+                    {member.bio}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Leadership Perspectives Section */}
+      <section className="section-padding bg-gradient-to-br from-secondary/5 via-background to-accent/5 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-secondary rounded-full blur-[120px]" />
+        </div>
+        <div className="container-custom relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-16"
+          >
+            <p className="text-sm font-bold tracking-[0.25em] uppercase text-secondary mb-4">
+              Leadership Perspectives
+            </p>
+            <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground">
+              Voices of <span className="text-gradient">Innovation</span>
+            </h2>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto px-4">
+
+            {/* Dr. Walida Ounruean Quote */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="bg-card/50 backdrop-blur-sm p-8 rounded-[2rem] border border-border shadow-xl flex flex-col justify-between"
+            >
+              <div>
+                <p className="text-4xl text-secondary/20 font-serif leading-none select-none mb-4">&#8220;</p>
+                <p className="text-lg font-medium text-foreground leading-relaxed italic mb-8">
+                  Technology is most powerful when it is rooted in academic excellence and practical purpose. We are cultivating an ecosystem of sustainable innovation that bridges today's challenges and tomorrow's possibilities.
+                </p>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-secondary shadow-md shrink-0">
+                  <img src={walidaImg} alt="Dr. Walida Ounruean" className="w-full h-full object-cover" />
+                </div>
+                <div>
+                  <p className="font-bold text-foreground text-sm">Dr. Walida Ounruean</p>
+                  <p className="text-[11px] text-muted-foreground uppercase tracking-wider font-semibold">Director</p>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Dr. Zoha Rahman Quote */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.05 }}
+              className="bg-card/50 backdrop-blur-sm p-8 rounded-[2rem] border border-border shadow-xl flex flex-col justify-between"
+            >
+              <div>
+                <p className="text-4xl text-secondary/20 font-serif leading-none select-none mb-4">&#8220;</p>
+                <p className="text-lg font-medium text-foreground leading-relaxed italic mb-8">
+                  Data is not merely a resource — it is the language through which the future speaks. By harnessing the power of big data and machine learning, we can architect solutions that are not only intelligent, but genuinely transformative for businesses and communities alike.
+                </p>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-secondary shadow-md shrink-0">
+                  <img src={zohaImg} alt="Dr. Zoha Rahman" className="w-full h-full object-cover" />
+                </div>
+                <div>
+                  <p className="font-bold text-foreground text-sm">Dr. Zoha Rahman</p>
+                  <p className="text-[11px] text-muted-foreground uppercase tracking-wider font-semibold">Board Member</p>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Dr. Ratna Raja Kumar Jambi Quote */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              className="bg-card/50 backdrop-blur-sm p-8 rounded-[2rem] border border-border shadow-xl flex flex-col justify-between"
+            >
+              <div>
+                <p className="text-4xl text-secondary/20 font-serif leading-none select-none mb-4">&#8220;</p>
+                <p className="text-lg font-medium text-foreground leading-relaxed italic mb-8">
+                  The most meaningful advances in technology are those that are purposefully designed to uplift communities and economies. At InnovoraMind, we are committed to turning that principle into measurable, global impact.
+                </p>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-secondary shadow-md shrink-0">
+                  <img src={ratnaImg} alt="Dr. Ratna Raja Kumar Jambi" className="w-full h-full object-cover" />
+                </div>
+                <div>
+                  <p className="font-bold text-foreground text-sm">Dr. Ratna Raja Kumar Jambi</p>
+                  <p className="text-[11px] text-muted-foreground uppercase tracking-wider font-semibold">Director</p>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Dr. Joe Perez Quote */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="bg-card/50 backdrop-blur-sm p-8 rounded-[2rem] border border-border shadow-xl flex flex-col justify-between"
+            >
+              <div>
+                <p className="text-4xl text-secondary/20 font-serif leading-none select-none mb-4">&#8220;</p>
+                <p className="text-lg font-medium text-foreground leading-relaxed italic mb-8">
+                  I'm a firm believer that if I'm not innovating, then I'm stagnating! Strategy is the bridge that connects visionary thinking to impactful reality for the digital age.
+                </p>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-secondary shadow-md shrink-0">
+                  <img src={joeImg} alt="Dr. Joe Perez" className="w-full h-full object-cover" />
+                </div>
+                <div>
+                  <p className="font-bold text-foreground text-sm">Dr. Joe Perez</p>
+                  <p className="text-[11px] text-muted-foreground uppercase tracking-wider font-semibold">Strategy Director</p>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Ezinne Esther Arisa Quote */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="bg-card/50 backdrop-blur-sm p-8 rounded-[2rem] border border-border shadow-xl flex flex-col justify-between"
+            >
+              <div>
+                <p className="text-4xl text-accent/20 font-serif leading-none select-none mb-4">&#8220;</p>
+                <p className="text-lg font-medium text-foreground leading-relaxed italic mb-8">
+                  True digital transformation requires more than just high-end tools — it demands strategic vision and ethical governance. Our goal is to empower organizations with technology that is responsible, inclusive, and fundamentally impactful.
+                </p>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-accent shadow-md shrink-0">
+                  <img src={ezinneImg} alt="Ezinne Esther Arisa" className="w-full h-full object-cover" />
+                </div>
+                <div>
+                  <p className="font-bold text-foreground text-sm">Ezinne Esther Arisa</p>
+                  <p className="text-[11px] text-muted-foreground uppercase tracking-wider font-semibold">Independent Director</p>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Dr. Katarzyna Antosz Quote */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="bg-card/50 backdrop-blur-sm p-8 rounded-[2rem] border border-border shadow-xl flex flex-col justify-between"
+            >
+              <div>
+                <p className="text-4xl text-secondary/20 font-serif leading-none select-none mb-4">&#8220;</p>
+                <p className="text-lg font-medium text-foreground leading-relaxed italic mb-8">
+                  Innovation thrives at the intersection of strategic foresight and technical excellence. At InnovoraMind, we are committed to building resilient digital foundations that empower businesses to lead in an ever-evolving global landscape.
+                </p>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-secondary shadow-md shrink-0">
+                  <img src={katarzynaImg} alt="Dr. Katarzyna Antosz" className="w-full h-full object-cover" />
+                </div>
+                <div>
+                  <p className="font-bold text-foreground text-sm">Dr. Katarzyna Antosz</p>
+                  <p className="text-[11px] text-muted-foreground uppercase tracking-wider font-semibold">Board Member</p>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Dr. Firas Zeidan Quote */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+              className="bg-card/50 backdrop-blur-sm p-8 rounded-[2rem] border border-border shadow-xl flex flex-col justify-between"
+            >
+              <div>
+                <p className="text-4xl text-secondary/20 font-serif leading-none select-none mb-4">&#8220;</p>
+                <p className="text-lg font-medium text-foreground leading-relaxed italic mb-8">
+                  Innovation is about people, purpose, and perseverance. I am proud to partner with InnovoraMind in its mission to democratize access to world-class AI solutions and to help shape a future where technology truly serves humanity.
+                </p>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-secondary shadow-md shrink-0">
+                  <img src={firasImg} alt="Dr. Firas Zeidan" className="w-full h-full object-cover" />
+                </div>
+                <div>
+                  <p className="font-bold text-foreground text-sm">Dr. Firas Zeidan</p>
+                  <p className="text-[11px] text-muted-foreground uppercase tracking-wider font-semibold">Advisory Board Member</p>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Dr. Tiansheng Yang Quote */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="bg-card/50 backdrop-blur-sm p-8 rounded-[2rem] border border-border shadow-xl flex flex-col justify-between"
+            >
+              <div>
+                <p className="text-4xl text-accent/20 font-serif leading-none select-none mb-4">&#8220;</p>
+                <p className="text-lg font-medium text-foreground leading-relaxed italic mb-8">
+                  Digital transformation is not merely a technical shift, but a profound evolution in how we learn, innovate, and create value. At InnovoraMind, we are shaping this future through rigorous academic standards and visionary leadership.
+                </p>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-accent shadow-md shrink-0">
+                  <img src={tianshengImg} alt="Dr. Tiansheng Yang" className="w-full h-full object-cover" />
+                </div>
+                <div>
+                  <p className="font-bold text-foreground text-sm">Dr. Tiansheng Yang</p>
+                  <p className="text-[11px] text-muted-foreground uppercase tracking-wider font-semibold">Advisory Board Member</p>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Aida Mehrad Quote */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.7 }}
+              className="bg-card/50 backdrop-blur-sm p-8 rounded-[2rem] border border-border shadow-xl flex flex-col justify-between"
+            >
+              <div>
+                <p className="text-4xl text-accent/20 font-serif leading-none select-none mb-4">&#8220;</p>
+                <p className="text-lg font-medium text-foreground leading-relaxed italic mb-8">
+                  Innovation is the relentless pursuit of better solutions. By embracing emerging technologies with an open and strategic mind, we can redefine what is possible and craft a resilient digital future.
+                </p>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-accent shadow-md shrink-0">
+                  <img src={aidaImg} alt="Aida Mehrad" className="w-full h-full object-cover" />
+                </div>
+                <div>
+                  <p className="font-bold text-foreground text-sm">Aida Mehrad</p>
+                  <p className="text-[11px] text-muted-foreground uppercase tracking-wider font-semibold">Director of Innovation & Emerging Tech</p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* Vision & Mission Section */}
+      <section className="section-padding bg-muted/30">
+        <div className="container-custom">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+            {/* Vision Card — Left */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="bg-card p-8 rounded-2xl shadow-lg border border-border hover:shadow-xl transition-all duration-300"
+            >
+              <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center mb-6 text-accent">
+                <Eye className="w-8 h-8" />
+              </div>
+              <h3 className="font-display text-2xl font-bold text-secondary mb-4">Our Vision</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                To become a globally recognized technology leader that shapes the future of digital innovation — where every business, regardless of size or geography, has access to world-class AI, cloud, and IT solutions that unlock limitless growth and societal progress.
+              </p>
+            </motion.div>
+
+            {/* Mission Card — Right */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="bg-card p-8 rounded-2xl shadow-lg border border-border hover:shadow-xl transition-all duration-300"
+            >
+              <div className="w-14 h-14 rounded-xl bg-secondary/10 flex items-center justify-center mb-6 text-secondary">
+                <Target className="w-8 h-8" />
+              </div>
+              <h3 className="font-display text-2xl font-bold text-secondary mb-4">Our Mission</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                To deliver enterprise-grade IT services, AI-powered automation, and scalable digital transformation solutions — built on deep industry expertise, rigorous engineering standards, and a commitment to empowering businesses with technology that is reliable, secure, and future-ready.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+    </Layout>
+  );
+};
+
+export default About;
