@@ -125,6 +125,13 @@ const judgesData = [
     bio: "Experienced executive director with a demonstrated history of working in database administration."
   },
   {
+    name: "Deepak Singh",
+    designation: "Principal Solution Architect, Healthcare Technology (Health IT)",
+    country: "USA",
+    image: "/images/judges/DS.jpeg",
+    bio: "Principal Solution Architect specializing in Healthcare Technology (Health IT)."
+  },
+  {
     name: "Tamar Makharoblidze",
     organisation: "School Of Arts and Sciences Ilai State University.",
     designation: "Professor",
