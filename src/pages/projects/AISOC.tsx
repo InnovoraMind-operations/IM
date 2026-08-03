@@ -153,6 +153,136 @@ const AISOC = () => {
               </div>
             </motion.div>
 
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="mt-20 pt-16 border-t border-border"
+            >
+              <div className="text-center mb-16">
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 font-display">
+                  Innovation Validation & Enterprise Readiness
+                </h2>
+                <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                  Demonstrating how proprietary AI-SOC innovation has been integrated into the platform and independently evaluated to strengthen enterprise security operations.
+                </p>
+              </div>
+
+              <div className="space-y-16">
+                <div className="prose prose-lg dark:prose-invert max-w-none text-muted-foreground">
+                  <p className="text-xl leading-relaxed font-medium text-foreground mb-8">
+                    InnovoraMind LLC continuously strengthens its technology through independent technical assessments and product validation exercises to ensure that its AI-SOC Platform aligns with enterprise cybersecurity requirements, modern AI engineering practices, and production-scale deployment expectations.
+                  </p>
+                  <p>
+                    As part of this process, the platform underwent an independent technical review that evaluated its architecture, AI orchestration, distributed systems design, operational workflows, enterprise scalability, cybersecurity practices, deployment readiness, and long-term product strategy. The recommendations from this review have been incorporated into the ongoing evolution of the AI-SOC Platform.
+                  </p>
+
+                  <h3 className="text-2xl font-bold text-foreground mt-12 mb-6 font-display">
+                    Proprietary Innovation Integrated into AI-SOC
+                  </h3>
+                  <p>
+                    The AI-SOC Platform incorporates proprietary innovations developed by InnovoraMind LLC to enable autonomous security operations through intelligent multi-agent orchestration, AI-assisted threat investigation, contextual threat enrichment, automated remediation planning, and human-in-the-loop decision support.
+                  </p>
+                  <p>
+                    These innovations strengthen the platform's ability to reduce analyst workload, accelerate incident response, improve operational visibility, and support enterprise-scale Security Operations Centers.
+                  </p>
+                </div>
+
+                <div className="grid sm:grid-cols-2 gap-6 my-10">
+                  {[
+                    { title: "Multi-Agent AI Orchestration", desc: "Stateful AI agents coordinate intelligent threat triage, investigation, context enrichment, and response planning.", icon: Brain },
+                    { title: "Enterprise Security Automation", desc: "Automated workflows reduce manual effort while preserving analyst approval for critical security actions.", icon: ShieldCheck },
+                    { title: "Distributed AI Architecture", desc: "Cloud-native architecture optimized for scalable telemetry processing, resilience, and enterprise performance.", icon: Server },
+                    { title: "Human-in-the-Loop Governance", desc: "Combines AI automation with analyst oversight to ensure responsible and controlled security operations.", icon: Activity }
+                  ].map((feature, idx) => (
+                    <div key={idx} className="bg-muted/30 p-6 rounded-2xl border border-border flex items-start gap-4 hover:border-primary/50 transition-colors">
+                      <div className="p-3 bg-primary/10 rounded-xl text-primary shrink-0">
+                        <feature.icon className="w-6 h-6" />
+                      </div>
+                      <div>
+                        <div className="font-bold text-foreground mb-2">{feature.title}</div>
+                        <p className="text-sm text-muted-foreground">{feature.desc}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                <div>
+                  <h3 className="text-2xl font-bold text-foreground mb-6 font-display">
+                    Independent Technical Review Outcomes
+                  </h3>
+                  <p className="text-lg text-muted-foreground mb-8">
+                    The independent review identified opportunities to further strengthen the platform's technical maturity, enterprise adoption strategy, and long-term scalability. These recommendations have been incorporated into the product roadmap.
+                  </p>
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {[
+                      { title: "Architecture Validation", desc: "Validated the modular AI-SOC architecture for scalable enterprise deployment." },
+                      { title: "Enterprise Readiness", desc: "Improved deployment strategy, operational maturity, governance, and monitoring." },
+                      { title: "Cybersecurity Design", desc: "Strengthened security-first architecture aligned with enterprise SOC operations." },
+                      { title: "Product Positioning", desc: "Enhanced enterprise value proposition and commercialization readiness." },
+                      { title: "Operational Workflow Optimization", desc: "Improved analyst workflows and automation orchestration." },
+                      { title: "Future Technology Roadmap", desc: "Supported long-term AI platform evolution and continuous innovation." }
+                    ].map((outcome, idx) => (
+                      <div key={idx} className="bg-card p-6 rounded-xl border border-border hover:border-primary/50 transition-colors">
+                        <h4 className="font-bold text-foreground mb-3">{outcome.title}</h4>
+                        <p className="text-sm text-muted-foreground">{outcome.desc}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="text-2xl font-bold text-foreground mb-6 font-display">
+                    Areas Evaluated
+                  </h3>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                    {[
+                      "Distributed Systems Architecture",
+                      "AI Platform Engineering",
+                      "Multi-Agent Orchestration",
+                      "Enterprise Security Operations",
+                      "Cybersecurity Architecture",
+                      "Threat Intelligence Integration",
+                      "Enterprise Deployment",
+                      "Cloud Scalability",
+                      "Operational Workflows",
+                      "Product Commercialization",
+                      "Enterprise Readiness",
+                      "Technology Roadmap"
+                    ].map((area, idx) => (
+                      <div key={idx} className="flex items-center gap-3 p-3 rounded-lg bg-muted/20 border border-border/50 text-sm font-medium text-foreground hover:bg-muted/40 transition-colors">
+                        <div className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                        {area}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="bg-secondary/5 border-l-4 border-secondary p-8 rounded-r-2xl my-12 shadow-sm">
+                  <h4 className="text-xl font-bold text-foreground mb-4">Continuous Product Improvement</h4>
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    The AI-SOC Platform continues to evolve through ongoing innovation, independent technical evaluation, and enterprise-focused product refinement. Insights from external technical assessments have strengthened architectural clarity, deployment readiness, AI orchestration, cybersecurity design, and operational workflows, reinforcing InnovoraMind's commitment to building scalable, enterprise-grade autonomous security solutions.
+                  </p>
+                </div>
+
+                <div className="prose prose-lg dark:prose-invert max-w-none text-muted-foreground">
+                  <h3 className="text-2xl font-bold text-foreground mb-6 font-display">
+                    Professional Acknowledgment
+                  </h3>
+                  <p>
+                    As part of InnovoraMind LLC's commitment to engineering excellence, the AI-SOC Platform benefited from an independent technical review conducted by Mr. Amber Rastogi, Technology Professional, Distributed Systems & AI Expert, and Senior Member, IEEE.
+                  </p>
+                  <p>
+                    His professional assessment provided valuable recommendations covering distributed systems architecture, AI orchestration, cybersecurity practices, enterprise readiness, operational workflows, commercialization strategy, and long-term technology planning. These insights have contributed to the continuous improvement of the AI-SOC Platform.
+                  </p>
+                  <p className="text-sm italic mt-8 text-muted-foreground/80">
+                    This acknowledgment recognizes a voluntary professional technical review and does not imply any employment, consulting, partnership, ownership, licensing, or financial relationship with InnovoraMind LLC.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+
           </div>
         </div>
       </section>
