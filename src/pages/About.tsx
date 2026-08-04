@@ -206,6 +206,13 @@ const About = () => {
                 image: aidaImg,
                 bio: "Aida Mehrad leads InnovoraMind's technological frontier, translating cutting-edge emerging technologies into scalable, impactful enterprise solutions that redefine the modern digital landscape.",
                 color: "accent"
+              },
+              {
+                name: "Mani Tahriri",
+                role: "Director of Technology & Chief Technology Presenter",
+                image: "/images/image.png",
+                bio: "Mani Tahriri is a renowned Mentor and Professor in Computer Engineering based in Spain. He leads advanced technology strategies, driving innovation and shaping the technological vision for the future.",
+                color: "secondary"
               }
             ].map((member, idx) => (
               <motion.div
