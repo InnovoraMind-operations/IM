@@ -10,7 +10,7 @@ import ezinneImg from '@/assets/advisors/advisor-6.jpeg';
 import firasImg from '@/assets/advisors/Dr firas.jpeg';
 import katarzynaImg from '@/assets/advisors/katarzyna.png';
 import profOlukemiImg from '@/assets/image copy.png';
-import emeraldImg from '@/assets/image copy 6.png';
+
 import drSaleemImg from '@/assets/image copy 3.png';
 import fatimahImg from '@/assets/image copy 4.png';
 import hassanImg from '@/assets/image copy 5.png';
@@ -21,7 +21,7 @@ import nandanImg from '@/assets/image copy 12.png';
 import satishImg from '@/assets/image copy 14.png';
 import sushantImg from '@/assets/image copy 15.png';
 import maniImg from '@/assets/image copy 16.png';
-import okopiImg from '@/assets/image copy 17.png';
+
 import anshumanImg from '@/assets/image copy 18.png';
 import jitenderImg from '@/assets/image copy 19.png';
 import shamalImg from '@/assets/image copy 21.png';
@@ -177,22 +177,7 @@ const judgesData = [
     image: sushantImg,
     bio: "Assistant Professor and researcher in modern technologies."
   },
-  {
-    name: "Okopi Fredrick",
-    organisation: "Unique UJ SERVICE LIMITES",
-    designation: "CEO",
-    country: "Nigeria",
-    image: okopiImg,
-    bio: "CEO driving strategic business services in Nigeria."
-  },
-  {
-    name: "Emerald Abena Amponsah Baffour",
-    organisation: "G-Fash Networks",
-    designation: "CEO",
-    country: "Ghana",
-    image: emeraldImg,
-    bio: "CEO leading technological advancements and network solutions."
-  },
+
   {
     name: "Shamal Chandrakant Bhole",
     designation: "Technical Leader, Crypto Risk & Compliance Infrastructure",
