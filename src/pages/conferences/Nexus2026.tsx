@@ -952,12 +952,12 @@ const Nexus2026 = () => {
                           nexus-2026-img-{index + 1}
                         </div>
                       </div>
-                      
+
                       {/* Image Container with CSS Scaling to hide taskbars */}
                       <div className="relative aspect-[16/10] bg-muted overflow-hidden">
-                        <img 
-                          src={imgSrc} 
-                          alt={`Nexus 2026 Glimpse ${index + 1}`} 
+                        <img
+                          src={imgSrc}
+                          alt={`Nexus 2026 Glimpse ${index + 1}`}
                           className="w-full h-full object-cover object-top origin-top scale-[1.08] group-hover:scale-[1.12] transition-transform duration-700 ease-out"
                         />
                         {/* Subtle inner shadow for depth */}
@@ -1013,7 +1013,7 @@ const Nexus2026 = () => {
                         nexus-2026-video-{index + 1}
                       </div>
                     </div>
-                    
+
                     {/* Video Container */}
                     <div className="relative aspect-video bg-muted overflow-hidden w-full">
                       <iframe
@@ -1052,12 +1052,12 @@ const Nexus2026 = () => {
                 Celebrating the outstanding achievements and contributions of our esteemed participants and visionaries.
               </p>
             </div>
-            
+
             <div className="flex justify-center px-4 md:px-8 mb-16">
               <div className="relative max-w-6xl w-full flex justify-center items-center drop-shadow-2xl hover:scale-[1.01] transition-transform duration-500">
-                <img 
-                  src={awardWinnersImg} 
-                  alt="Nexus 2026 Award Winners" 
+                <img
+                  src={awardWinnersImg}
+                  alt="Nexus 2026 Award Winners"
                   className="w-full h-auto max-h-[80vh] object-contain rounded-xl"
                 />
               </div>

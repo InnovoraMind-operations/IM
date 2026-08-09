@@ -11,7 +11,10 @@ import {
     ShieldCheck,
     Binary,
     Microchip,
-    Network
+    Network,
+    Eye,
+    HeartPulse,
+    Brain
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -19,46 +22,169 @@ const techDomains = [
     {
         icon: Cpu,
         title: 'Artificial Intelligence',
+        subtitle: 'Powering Next-Generation Intelligent Systems and Generative Technologies',
         description: 'Specialized solutions in Machine Learning, Deep Learning, and Neural Networks. We deliver enterprise-grade AI systems for automation, Generative AI, and intelligent decision-making.',
         color: 'from-blue-500 to-cyan-400',
-        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000&auto=format&fit=crop'
+        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000&auto=format&fit=crop',
+        capabilities: [
+            'Machine Learning',
+            'Deep Learning',
+            'Neural Networks',
+            'Generative AI',
+            'Computer Vision',
+            'Natural Language Processing',
+            'Predictive Analytics'
+        ]
     },
     {
         icon: Database,
         title: 'Information Technology',
+        subtitle: 'Building Resilient Cloud Infrastructures and Big Data Pipelines',
         description: 'Focusing on Cloud Computing, Big Data Analytics, and enterprise-scale IT infrastructure. Our solutions power the backbone of modern digital organizations.',
         color: 'from-purple-500 to-pink-400',
-        image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2000&auto=format&fit=crop'
+        image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2000&auto=format&fit=crop',
+        capabilities: [
+            'Cloud Computing',
+            'Big Data Analytics',
+            'IT Infrastructure',
+            'Database Management',
+            'Enterprise Architecture',
+            'System Integration',
+            'Network Administration'
+        ]
     },
     {
         icon: Code2,
         title: 'Software Engineering',
+        subtitle: 'Engineering High-Performance, Scalable, and Modern Software Systems',
         description: 'DevOps, Agile methodologies, and full-stack development trends. Explore the latest in programming languages, architecture, and software quality assurance.',
         color: 'from-amber-500 to-orange-400',
-        image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2000&auto=format&fit=crop'
-    }
-];
-
-const features = [
+        image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2000&auto=format&fit=crop',
+        capabilities: [
+            'Full-Stack Development',
+            'DevOps & CI/CD',
+            'Agile Methodologies',
+            'Software Architecture',
+            'API Development',
+            'Quality Assurance & Testing',
+            'Microservices'
+        ]
+    },
+    {
+        icon: Eye,
+        title: 'Explainable Artificial Intelligence (XAI)',
+        subtitle: 'Advancing Transparent, Interpretable, and Trustworthy Artificial Intelligence',
+        description: 'Developing advanced Explainable Artificial Intelligence (XAI) capabilities to improve the transparency, interpretability, and reliability of machine learning systems. Our expertise enables organizations to understand AI-generated outcomes, strengthen model transparency, improve decision intelligence, and support responsible AI deployment across enterprise environments. By integrating explainability methodologies into intelligent solutions, we help build AI systems that are understandable, accountable, and aligned with governance and operational objectives.',
+        color: 'from-emerald-500 to-teal-400',
+        image: 'https://images.unsplash.com/photo-1507668077129-56e32842fceb?q=80&w=2000&auto=format&fit=crop',
+        capabilities: [
+            'Explainable AI',
+            'Model Interpretability',
+            'Feature Attribution',
+            'Decision Intelligence',
+            'Responsible AI',
+            'AI Governance',
+            'AI Model Validation'
+        ]
+    },
+    {
+        icon: HeartPulse,
+        title: 'Healthcare Cybersecurity',
+        subtitle: 'Intelligent Cybersecurity for Secure Digital Healthcare Ecosystems',
+        description: 'Delivering advanced Healthcare Cybersecurity capabilities that strengthen the security, resilience, and operational integrity of digital healthcare environments. Our expertise includes intelligent threat detection, behavioural analytics, secure access management, data protection strategies, cybersecurity risk mitigation, and resilient security architectures that support modern healthcare infrastructures and secure digital transformation initiatives.',
+        color: 'from-red-500 to-rose-400',
+        image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2000&auto=format&fit=crop',
+        capabilities: [
+            'Healthcare Cybersecurity',
+            'AI-Driven Threat Detection',
+            'Behavioural Analytics',
+            'Medical Device Security',
+            'Identity & Access Management',
+            'Data Protection & Encryption',
+            'Cyber Risk Management',
+            'Cyber Resilience'
+        ]
+    },
+    {
+        icon: Brain,
+        title: 'AI Model Explainability & Decision Intelligence',
+        subtitle: 'Enabling Reliable, Transparent, and Accountable AI Decision-Making',
+        description: 'Developing advanced AI model explainability and decision intelligence capabilities to improve transparency, validation, and confidence in complex machine learning systems. Our expertise focuses on analysing model behaviour, understanding feature influence, strengthening prediction interpretability, and supporting informed, data-driven decision-making across enterprise applications while promoting trustworthy and responsible AI adoption.',
+        color: 'from-indigo-500 to-violet-400',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop',
+        capabilities: [
+            'AI Model Explainability',
+            'Decision Intelligence',
+            'Feature Contribution Analysis',
+            'Predictive Model Validation',
+            'Model Behaviour Analysis',
+            'Transparent AI Systems',
+            'Trustworthy AI',
+            'Responsible AI Implementation'
+        ]
+    },
     {
         icon: ShieldCheck,
         title: 'Cybersecurity',
-        description: 'Discussing the latest in threat detection, zero-trust architecture, and data privacy.'
+        subtitle: 'Intelligent Cybersecurity for Secure Digital Infrastructures',
+        description: 'Delivering advanced cybersecurity capabilities that strengthen the security, resilience, and operational integrity of modern digital environments. Our expertise includes intelligent threat detection, zero-trust architecture, behavioral analytics, secure access management, data protection strategies, and risk mitigation.',
+        color: 'from-orange-600 to-red-500',
+        image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2000&auto=format&fit=crop',
+        capabilities: [
+            'Threat Detection',
+            'Zero-Trust Architecture',
+            'Data Privacy',
+            'Behavioral Analytics',
+            'Vulnerability Assessment',
+            'Resilient Architecture'
+        ]
     },
     {
         icon: Network,
-        title: 'Internet of Things',
-        description: 'Smart cities, industrial IoT, and edge computing innovations.'
+        title: 'Internet of Things (IoT)',
+        subtitle: 'Smart Cities, Industrial IoT, and Edge Computing Innovations',
+        description: 'Designing and deploying connected ecosystems that bridge physical operations with digital insights. We focus on industrial IoT platforms, smart city architectures, edge computing systems, and low-latency data pipelines to power real-time decision intelligence.',
+        color: 'from-teal-500 to-cyan-400',
+        image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2000&auto=format&fit=crop',
+        capabilities: [
+            'Smart Cities',
+            'Industrial IoT',
+            'Edge Computing',
+            'Sensor Networks',
+            'Data Pipelines',
+            'Embedded Security'
+        ]
     },
     {
         icon: Binary,
         title: 'Blockchain & Web3',
-        description: 'Decentralized systems, smart contracts, and the future of digital assets.'
+        subtitle: 'Decentralized Systems, Smart Contracts, and Trustless Networks',
+        description: 'Engineering decentralized architectures that redefine trust and digital ownership. We develop secure smart contracts, tokenomics models, and scalable consensus networks to support next-generation Web3 protocols and secure digital assets.',
+        color: 'from-purple-500 to-indigo-400',
+        image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=2000&auto=format&fit=crop',
+        capabilities: [
+            'Decentralized Systems',
+            'Smart Contracts',
+            'Tokenomics',
+            'Consensus Protocols',
+            'Cryptography',
+            'Web3 Integration'
+        ]
     },
     {
         icon: Microchip,
         title: 'Quantum Computing',
-        description: 'Exploring the boundary of computational science and its real-world apps.'
+        subtitle: 'Exploring the Boundaries of Computational Science and Quantum Mechanics',
+        description: 'Pioneering the application of quantum algorithms to solve complex computational challenges. We study quantum annealing, gate-model systems, and quantum resistant cryptography to prepare organizations for the next era of computing.',
+        color: 'from-pink-500 to-fuchsia-400',
+        image: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=2000&auto=format&fit=crop',
+        capabilities: [
+            'Quantum Algorithms',
+            'Cryptographic Resistance',
+            'Quantum Simulation',
+            'Qubit Management',
+            'Quantum Machine Learning'
+        ]
     }
 ];
 
@@ -122,9 +248,9 @@ const TechInnovation = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1 }}
-                                className="group relative overflow-hidden rounded-3xl bg-card border border-border shadow-sm hover:shadow-xl transition-all duration-500"
+                                className="group relative overflow-hidden rounded-3xl bg-card border border-border shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col h-full"
                             >
-                                <div className="h-64 overflow-hidden relative">
+                                <div className="h-52 overflow-hidden relative flex-shrink-0">
                                     <img
                                         src={domain.image}
                                         alt={domain.title}
@@ -137,36 +263,34 @@ const TechInnovation = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="p-8">
-                                    <h3 className="font-display text-2xl font-bold text-foreground mb-4">{domain.title}</h3>
-                                    <p className="text-muted-foreground leading-relaxed mb-6">
-                                        {domain.description}
-                                    </p>
+                                <div className="p-8 flex flex-col flex-grow">
+                                    <div className="flex-grow flex flex-col">
+                                        <span className="inline-block text-xs font-semibold text-secondary mb-2">
+                                            {domain.subtitle}
+                                        </span>
+                                        <h3 className="font-display text-2xl font-bold text-foreground mb-4">
+                                            {domain.title}
+                                        </h3>
+                                        <p className="text-muted-foreground text-sm leading-relaxed mb-6 flex-grow">
+                                            {domain.description}
+                                        </p>
+                                    </div>
+                                    <div className="mt-auto pt-6 border-t border-border/50">
+                                        <h4 className="text-xs font-bold text-foreground uppercase tracking-widest mb-3">
+                                            Core Capabilities
+                                        </h4>
+                                        <div className="flex flex-wrap gap-1.5">
+                                            {domain.capabilities.map((cap) => (
+                                                <span
+                                                    key={cap}
+                                                    className="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-medium bg-muted text-foreground border border-border/70 hover:bg-secondary/10 hover:text-secondary hover:border-secondary/30 transition-all duration-300"
+                                                >
+                                                    {cap}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </div>
                                 </div>
-                            </motion.div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Stats/Highlights */}
-            <section className="section-padding bg-muted/30">
-                <div className="container-custom">
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {features.map((feature, index) => (
-                            <motion.div
-                                key={feature.title}
-                                initial={{ opacity: 0, scale: 0.95 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: index * 0.1 }}
-                                className="p-6 rounded-2xl bg-card border border-border/50 text-center hover:-translate-y-2 transition-transform duration-300"
-                            >
-                                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
-                                    <feature.icon className="w-7 h-7 text-primary" />
-                                </div>
-                                <h4 className="font-display font-bold text-foreground mb-2">{feature.title}</h4>
-                                <p className="text-sm text-muted-foreground">{feature.description}</p>
                             </motion.div>
                         ))}
                     </div>
