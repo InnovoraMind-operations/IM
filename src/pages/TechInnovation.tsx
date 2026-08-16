@@ -14,7 +14,14 @@ import {
     Network,
     Eye,
     HeartPulse,
-    Brain
+    Brain,
+    Bot,
+    Sparkles,
+    ExternalLink,
+    Github,
+    Globe2,
+    Workflow,
+    CheckCircle2
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -226,6 +233,94 @@ const TechInnovation = () => {
                 {/* Abstract Background Elements */}
                 <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-[600px] h-[600px] bg-secondary/10 rounded-full blur-[120px]" />
                 <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/4 w-[500px] h-[500px] bg-accent/10 rounded-full blur-[100px]" />
+            </section>
+
+            {/* Flagship Innovation Spotlight: OpenChat */}
+            <section className="py-20 bg-muted/30 border-y border-border/50 relative overflow-hidden">
+                <div className="container-custom relative z-10">
+                    <div className="max-w-6xl mx-auto">
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6 }}
+                            className="bg-card/70 backdrop-blur-xl rounded-[36px] border border-border p-8 md:p-14 shadow-2xl relative overflow-hidden"
+                        >
+                            <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl pointer-events-none" />
+                            <div className="absolute bottom-0 left-0 w-80 h-80 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
+
+                            <div className="grid lg:grid-cols-12 gap-10 items-center">
+                                <div className="lg:col-span-7 space-y-6">
+                                    <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary/15 text-secondary border border-secondary/30 text-xs font-bold uppercase tracking-widest">
+                                        <Sparkles className="w-3.5 h-3.5" />
+                                        Featured Innovation Spotlight
+                                    </div>
+                                    <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+                                        OpenChat: <span className="text-gradient">Autonomous AI Agent Platform</span>
+                                    </h2>
+                                    <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
+                                        An open-source, multi-tenant AI conversational platform powered by <strong>PostgreSQL pgvector</strong> and multi-provider LLM orchestration. Ingest business knowledge, perform agentic tool execution with human governance, and embed anywhere with a single script tag.
+                                    </p>
+
+                                    <div className="grid sm:grid-cols-2 gap-3 pt-2">
+                                        {[
+                                            "RAG Retrieval & pgvector Vector Engine",
+                                            "Agentic HTTP API Tool Execution",
+                                            "Multi-Provider AI (OpenAI, Claude, Gemini, Groq, Ollama)",
+                                            "Drop-in Embeddable Web Widget & Iframe"
+                                        ].map((feat, idx) => (
+                                            <div key={idx} className="flex items-center gap-2.5 text-xs sm:text-sm font-medium text-foreground/90">
+                                                <CheckCircle2 className="w-4 h-4 text-secondary shrink-0" />
+                                                <span>{feat}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+
+                                    <div className="flex flex-wrap items-center gap-4 pt-4">
+                                        <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold rounded-full px-7">
+                                            <Link to="/projects/openchat">
+                                                View Project Details
+                                                <ArrowRight className="w-4 h-4 ml-2" />
+                                            </Link>
+                                        </Button>
+                                        <Button asChild size="lg" variant="outline" className="rounded-full px-6 border-border font-bold">
+                                            <a href="https://open-chat1.vercel.app" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
+                                                <Globe2 className="w-4 h-4 text-primary" />
+                                                Live Demo
+                                                <ExternalLink className="w-3.5 h-3.5" />
+                                            </a>
+                                        </Button>
+                                        <Button asChild size="lg" variant="ghost" className="rounded-full px-6 font-bold">
+                                            <a href="https://github.com/InnovoraMind-operations/OpenChat" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
+                                                <Github className="w-4 h-4" />
+                                                GitHub
+                                            </a>
+                                        </Button>
+                                    </div>
+                                </div>
+
+                                <div className="lg:col-span-5 grid grid-cols-2 gap-4">
+                                    {[
+                                        { title: "RAG Engine", desc: "Cosine similarity vector retrieval over custom PDFs, docs, & web data", icon: Database },
+                                        { title: "Tool Calling", desc: "Autonomous API calls & ticketing with human-in-the-loop review", icon: Workflow },
+                                        { title: "Multi-Model", desc: "Automatic failover across OpenAI, Anthropic, Gemini, & Ollama", icon: Brain },
+                                        { title: "Enterprise Ready", desc: "AES-256-GCM encryption, SCIM provisioning, & isolated workspaces", icon: ShieldCheck }
+                                    ].map((item, i) => (
+                                        <div key={i} className="bg-background/80 p-5 rounded-2xl border border-border flex flex-col justify-between hover:shadow-md transition-all">
+                                            <div className="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary mb-3">
+                                                <item.icon className="w-5 h-5" />
+                                            </div>
+                                            <div>
+                                                <h4 className="font-bold text-foreground text-sm mb-1">{item.title}</h4>
+                                                <p className="text-xs text-muted-foreground leading-relaxed">{item.desc}</p>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </motion.div>
+                    </div>
+                </div>
             </section>
 
             {/* Main Domains */}

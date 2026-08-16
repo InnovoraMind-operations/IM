@@ -30,6 +30,7 @@ const Events = lazy(() => import("./pages/Events"));
 const Projects = lazy(() => import("./pages/Projects"));
 const AISOC = lazy(() => import("./pages/projects/AISOC"));
 const AIGovernance = lazy(() => import("./pages/projects/AIGovernance"));
+const OpenChat = lazy(() => import("./pages/projects/OpenChat"));
 const GASS = lazy(() => import("./pages/conferences/GASS"));
 const Nexus2026 = lazy(() => import("./pages/conferences/Nexus2026"));
 const EthicsOfAGI = lazy(() => import("./pages/conferences/EthicsOfAGI"));
@@ -86,6 +87,8 @@ const App = () => (
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/ai-soc" element={<AISOC />} />
             <Route path="/projects/ai-governance" element={<AIGovernance />} />
+            <Route path="/projects/openchat" element={<OpenChat />} />
+            <Route path="/projects/open-chat" element={<OpenChat />} />
             <Route path="/cookie-policy" element={<CookiePolicy />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
