@@ -210,7 +210,8 @@ const About = () => {
               {
                 name: "Mani Tahriri",
                 role: "Director of Technology & Chief Technology Presenter",
-                image: "/images/image.png",
+                //image: "/images/image.png",
+                image: "/images/image2.jpg",
                 bio: "Mani Tahriri is a renowned Mentor and Professor in Computer Engineering based in Spain. He leads advanced technology strategies, driving innovation and shaping the technological vision for the future.",
                 color: "secondary"
               }
