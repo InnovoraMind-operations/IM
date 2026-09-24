@@ -18,7 +18,7 @@ import pankajImg from '@/assets/image copy 10.png';
 import mrugendraImg from '@/assets/image copy 11.png';
 import nandanImg from '@/assets/image copy 12.png';
 import satishImg from '@/assets/image copy 14.png';
-import sushantImg from '@/assets/image copy 15.png';
+import sriHarshaImg from '@/assets/sri-harsha.jpg';
 import maniImg from '@/assets/image copy 16.png';
 import anshumanImg from '@/assets/image copy 18.png';
 import jitenderImg from '@/assets/image copy 19.png';
@@ -168,12 +168,12 @@ const judgesData = [
     bio: "Higher Education professional committed to educational development."
   },
   {
-    name: "Dr. Sushant Kumar Dubey",
-    organisation: "Amity University, Patna",
-    designation: "Assistant Professor",
-    country: "India",
-    image: sushantImg,
-    bio: "Assistant Professor and researcher in modern technologies."
+    name: "Sri Harsha Anand Pushkala",
+    organisation: "Atlanticus",
+    designation: "BCS Fellow, Senior IEEE Member & Advisory Board Member – TheIAForum",
+    country: "Atlanta, Georgia, USA",
+    image: sriHarshaImg,
+    bio: "BCS Fellow, Senior IEEE Member, and Advisory Board Member at TheIAForum. Based at Atlanticus in Atlanta, Georgia, he specializes in large-scale AI anomaly detection, machine learning governance, cybersecurity, and resilient financial technology systems."
   },
   {
     name: "Shamal Chandrakant Bhole",
