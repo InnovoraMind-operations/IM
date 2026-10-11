@@ -159,10 +159,10 @@ const About = () => {
                 color: "secondary"
               },
               {
-                name: "Dr. Ratna Raja Kumar Jambi",
+                name: "Dr RRR Jambi",
                 role: "Director",
                 image: ratnaImg,
-                bio: "Dr. Ratna Raja Kumar Jambi brings a wealth of multidisciplinary expertise to InnovoraMind's board, driving strategic initiatives that translate cutting-edge research into real-world technological impact across global markets.",
+                bio: "Dr RRR Jambi brings a wealth of multidisciplinary expertise to InnovoraMind's board, driving strategic initiatives that translate cutting-edge research into real-world technological impact across global markets.",
                 color: "secondary"
               },
               {
@@ -332,7 +332,7 @@ const About = () => {
               </div>
             </motion.div>
 
-            {/* Dr. Ratna Raja Kumar Jambi Quote */}
+            {/* Dr RRR Jambi Quote */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -348,10 +348,10 @@ const About = () => {
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-secondary shadow-md shrink-0">
-                  <img src={ratnaImg} alt="Dr. Ratna Raja Kumar Jambi" className="w-full h-full object-cover" />
+                  <img src={ratnaImg} alt="Dr RRR Jambi" className="w-full h-full object-cover" />
                 </div>
                 <div>
-                  <p className="font-bold text-foreground text-sm">Dr. Ratna Raja Kumar Jambi</p>
+                  <p className="font-bold text-foreground text-sm">Dr RRR Jambi</p>
                   <p className="text-[11px] text-muted-foreground uppercase tracking-wider font-semibold">Director</p>
                 </div>
               </div>
